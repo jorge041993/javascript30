@@ -1,0 +1,38 @@
+div{
+    font-family: "Arial";
+    background-color: #07C300;
+    margin: 10px 10px;
+    text-align: center;
+    font-weight: bolder;
+    padding: 15px 30px;
+    width: 80px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.trianguloLateral{
+    -moz-transform: translateX(0);
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+}
+.trianguloLateral:before{
+    content: "";
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+	width: 0;
+	height: 0;
+	background: linear-gradient(45deg, white 45%, #aaa 50%, #ccc 60%, white);
+	background: -webkit-linear-gradient(45deg, white 45%, #aaa 50%, #ccc 60%, white);
+	background: -moz-linear-gradient(45deg, white 45%, #aaa 50%, #ccc 60%, white);
+	transition-duration: 0.7s;
+	-webkit-transition-duration: 0.7s;
+	-moz-transition-duration: 0.7s;
+}
+.trianguloLateral:hover:before{
+    width: 35px;
+	height: 35px;
+
+}
+
+
+

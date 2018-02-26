@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        body {background: powderblue; font-family: Arial, Helvetica, sans-serif;}
+        h1 {color: red;}
+        p {color: white; font: 150% sean-serif}
+        </style>
+    <title>practica2</title>
+</head>
+<body>
+    probando color en body style 
+    <h1>Estamos realizando la practica 3</h1>
+    <p>donde se ralizara un a tabla haciendo uso de diferentes etiquetas</p>
+    <table border="1px" width="80%";>
+        
+        <tr>
+            <th>sin ser compatible <br><audio width="300"; heigt="32";
+                src="audio1.mp3" controls="controls"
+                autoplay="autoplay" preload loop> 
+            <td>compatible/sin autuplay <br><audio controls preload>
+                    <source src="audio1.ogg" type="audio/ogg"/>
+                    <source src="audio1.mp3" type="audio/mpeg"/>
+                    <source src="audio1.wav" type="audio/wav"/>
+                    </audio> 
+                </td>
+            <td> sin autoplay y preload
+                <audio controls>
+            <source src="audio1.ogg" type="audio/ogg"/>
+            <source src="audio1.mp3" type="audio/mpeg"/>
+            </audio>   
+            </td> <!--pone el texto normal-->
+        </tr>
+
+        <tr>
+                <td>video con el atributo muted <br><video src="calidad1.mp4" width="240"
+                    height="150" controls autoplay preload muted loop></video> 
+                <!--funciona en IE10-->
+            </td> 
+                <th>compatible <br>
+                <video width="240" height="150" controls preload>
+                    <source src="caida2.mp4" type="video/mp4;"/>
+                    <source src="caida2.ogv" type="video/ogv;"/>
+                    <source src="caida2.webm" type="video/webm;"/>
+                </video>
+                </th>
+                <td>sin autoplay y preload <br>
+                <video width="240" height="150" controls>
+                        <source src="caida1.mp4" type="video/mp4;"/>
+                        <source src="caida1.ogv" type="video/ogv;"/>
+                        <source src="caida1.webm" type="video/webm;"/> 
+                </video>
+                </td> 
+            </tr>
+        
+            <tr>
+                    <td>filacol1</td> 
+                    <td>filacol2</td>
+                    <th>filacol3</th> 
+                </tr>
+    </table>

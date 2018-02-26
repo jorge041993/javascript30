@@ -1,0 +1,123 @@
+/*div {
+	border: 2px solid black;
+	width: 50%;
+	position: relative;
+	margin-left: 25%;
+}
+
+div:before {
+	content: "Hola";
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+}
+
+div:after {
+	content: "Mundo";
+	background: red;
+}*/
+div {
+	font-family: "Arial";
+	background-color: #ABCDEF;
+	margin: 10px 10px;
+	text-align: center;
+	font-weight: bolder;
+	padding: 15px 30px;
+	width: 80px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.trianguloLateral {
+	transform: translateX(0);
+	-webkit-transform: translateX(0);
+	-moz-transform: translateX(0);
+}
+
+.trianguloLateral:before {
+	content: "";
+	/*Duracion de la transicion*/
+	transition-duration: 0.5s;
+	-webkit-transition-duration: 0.5s;
+	-moz-transition-duration: 0.5s;
+
+	border-style: solid;
+	border-width: 15px 15px 15px 0px;
+	border-color: transparent #ABCDEF transparent transparent;
+	position: absolute;
+	left: 0px;
+	top: 50%;
+	margin-top: -15px;
+}
+
+.trianguloLateral:hover:before {
+	left: -15px;
+}
+
+.trianguloLateral:after {
+	content: "";
+	/*Duracion de la transicion*/
+	transition-duration: 0.5s;
+	-webkit-transition-duration: 0.5s;
+	-moz-transition-duration: 0.5s;
+
+	content: "";
+	border-style: solid;
+	border-width: 15px 0px 15px 15px;
+	border-color: transparent transparent transparent #ABCDEF;
+	position: absolute;
+	right: 0px;
+	top: 50%;
+	margin-top: -15px
+}
+
+.trianguloLateral:hover:after{
+	right: -15px;
+}
+
+.trianguloVertical {
+	transform: translateY(0);
+	-webkit-transform: translateY(0);
+	-moz-transform: translateY(0);
+}
+
+.trianguloVertical:before {
+	content: "";
+	/*Duracion de la transicion*/
+	transition-duration: 0.5s;
+	-webkit-transition-duration: 0.5s;
+	-moz-transition-duration: 0.5s;
+
+	border-style: solid;
+	border-width: 0px 15px 15px 15px;
+	border-color: transparent transparent #ABCDEF transparent;
+	position: absolute;
+	top: 0px;
+	left: 50%;
+	margin-left: -15px;
+}
+
+.trianguloVertical:hover:before {
+	top: -15px;
+}
+
+.trianguloVertical:after {
+	content: "";
+	/*Duracion de la transicion*/
+	transition-duration: 0.5s;
+	-webkit-transition-duration: 0.5s;
+	-moz-transition-duration: 0.5s;
+
+	content: "";
+	border-style: solid;
+	border-width: 15px 15px 0px 15px;
+	border-color: #ABCDEF transparent transparent transparent;
+	position: absolute;
+	bottom: 0px;
+	left: 50%;
+	margin-left: -15px
+}
+
+.trianguloVertical:hover:after{
+	bottom: -15px;
+}

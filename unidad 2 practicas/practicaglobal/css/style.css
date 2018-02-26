@@ -1,0 +1,132 @@
+body{
+    background: url(../css/imagen.jpg);
+}
+#Principal :hover{
+    /*para crear la caja donde van estar nuestras letras*/
+    display: block;
+    width: 500px;
+    margin: 50px auto;
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #999999;
+    background: #DDDDDD;
+/*para agregar el estilo de etiquetas redondeadas*/
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+/*para darle un estilo redondeado a cada esquina de la caja*/
+    -moz-box-shadow: #707070 5px 5px;
+    -webkit-box-shadow: #6B6B6B 5px 5px;
+    box-shadow:  #757575 5px 5px ;
+/*para poner una imagen a la caja donde estan las letras*/
+    border: 29px dashed transparent;
+    -moz-border-image: url("../css/fractal.jpg") 29 stretch;
+    -webkit-border-image: url("../css/fractal.jpg") 29 stretch;
+    border-image: url("../css/fractal.jpg") 29 stretch;
+/*para agregar una sombra a la caja*/
+    box-shadow:  rgb(150, 150, 150) 5px 5px  10px inset;
+/*para declarar la dirección específica del gradiente*/
+    background: -moz-linear-gradient(top, #FFFFFF 50%, #1B0092 90%);
+  /*para dar efectos ciertas partes de la caja*/   
+    background: -moz-radial-gradient(center,ellipse, #FFFFFF 0%, #389900 200%);
+/*hacer las letras letras se  trasnladen a una parte de la pagina por un cierto tiempo*/
+    -moz-transition: -moz-transform 2s ease-in 0.5s;
+    -webkit-transition: -webkit-transform 2s ease 0.5s;
+/*para darle un estilo de marco que rodea las letras*/
+    outline-color: rgb(137, 168, 0);
+    outline-style: double;
+    outline-width: 5px;
+    outline-offset: 15px;
+/*para rotar la caja junto con las letras a una parte la pagina*/
+    -moz-transform: translate(100px) rotate(45deg) scale(0.5) skew(20deg);
+    -webkit-transform: translate(100px) rotate(45deg) scale(0.5) skew(20deg);
+
+    
+    
+}
+/*para madar a poner un estilo de letra*/
+#titulo{
+    font: bold 36px MiFuenteLetra, verdana, sans-serif;
+/*para darle una sombra a las letras*/
+    text-shadow: rgba(0, 129, 0, 0.5) 3px 3px 5px;
+/*es una función diferente para generar colores, pero es más intuitiva que rgba().*/
+    color: hsla(51, 100%, 37%, 0.5);
+
+}
+/*para madar a llamar ese estilo de letra*/
+@font-face{
+    font-family: 'MiFuenteLetra';
+    src: url('../css/enervate.ttf');
+}
+/*es el que realiza la rotacion a la caja*/
+#Principal :hover{
+    -moz-transform: rotate(5deg);
+    -webkit-transform: rotate(5deg);
+    transform: rotate(5deg);
+}
+
+
+#segundo :active{
+    /*para crear la caja donde van estar nuestras letras*/
+    display: block;
+    width: 500px;
+    margin: 50px auto;
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #999999;
+    background: #DDDDDD;
+/*para agregar el estilo de etiquetas redondeadas*/
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+/*para darle un estilo redondeado a cada esquina de la caja*/
+    -moz-box-shadow: #707070 5px 5px;
+    -webkit-box-shadow: #6B6B6B 5px 5px;
+    box-shadow:  #757575 5px 5px ;
+/*para poner una imagen a la caja donde estan las letras*/
+    border: 29px dashed transparent;
+    -moz-border-image: url("../css/fractal.jpg") 29 stretch;
+    -webkit-border-image: url("../css/fractal.jpg") 29 stretch;
+    border-image: url("../css/fractal.jpg") 29 stretch;
+/*para agregar una sombra a la caja*/
+    box-shadow:  rgb(150, 150, 150) 5px 5px  10px inset;
+/*para declarar la dirección específica del gradiente*/
+    background: -moz-linear-gradient(top, #FFFFFF 50%, #1B0092 90%);
+  /*para dar efectos ciertas partes de la caja*/   
+    background: -moz-radial-gradient(center,circle, #FFFFFF 0%, #991F00 200%);
+/*hacer las letras letras se  trasnladen a una parte de la pagina por un cierto tiempo*/
+    -moz-transition: -moz-transform 2s ease-in 0.5s;
+    -webkit-transition: -webkit-transform 2s ease 0.5s;
+/*para darle un estilo de marco que rodea las letras*/
+    outline-color: rgb(255, 217, 0);
+    outline-style: inset;
+    outline-width: 5px;
+    outline-offset: 15px;
+/*para rotar la caja junto con las letras a una parte la pagina*/
+    /*-moz-transform: translate(100px) rotate(45deg) scale(0.5) skew(20deg);
+    -webkit-transform: translate(100px) rotate(45deg) scale(0.5) skew(20deg);*/
+
+    
+    
+}
+/*para madar a poner un estilo de letra*/
+#titulo2{
+    font: bold 36px MiFuenteLetra, verdana, sans-serif;
+/*para darle una sombra a las letras*/
+    text-shadow: rgba(238, 255, 0, 0.5) 3px 3px 5px;
+/*es una función diferente para generar colores, pero es más intuitiva que rgba().*/
+    color: hsla(51, 100%, 37%, 0.5);
+
+}
+/*para madar a llamar ese estilo de letra*/
+@font-face{
+    font-family: 'MiFuenteLetra';
+    src: url('../css/ASMAN.ttf');
+}
+/*es el que realiza la rotacion a la caja*/
+#segundo :active{
+    -moz-transform: rotate(5deg);
+    -webkit-transform: rotate(5deg);
+    transform: rotate(5deg);
+}
+
